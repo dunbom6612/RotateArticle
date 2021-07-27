@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  width: 100vw;
+  background-color: #333;
+  color: #222;
+  overflow-x: hidden;
+}
+.container{
+  padding: 5rem;
+  background-color: #fafafa;
+  transform-origin: top left;
+}
+
+.container.show-nav{
+  transform: rotate(-20deg);
+  transition: transform 0.5s linear;
+}
+
+.rotate-circle{
+  background-color: #ff7979;
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  left: -100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: transform 0.5s linear;
+}
+small{
+  color: #555;
+  font-style: italic;
+}
+
+p{
+  line-height: 1.5;
+}
+
+button{
+  color: #fafafa;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#close{
+  margin-right: 3rem;
+}
+
+nav{
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  color:#ffffff;
+  transform: translateX(-20rem);
+  transition: transform 0.5 ease-out;
+}
+nav.show-nav{
+  transform: translateX(0);
+}
+ul{
+  list-style: none;
+  text-transform: uppercase;
+}
+li{
+  margin: 40px 15px;
+}
+i{
+  margin-right: 15px;
+}
+ul li + li{
+  margin-left: 30px;
+}
+
+ul li + li + li{
+  margin-left: 45px;
+}
+
